@@ -12,7 +12,7 @@ provider "docker" {}
 resource "docker_image" "myimage" {
   name          = "myimage"
   build {
-    context    = ".."
+    context    = "../"
     dockerfile = "./Dockerfile"
   }
 }
